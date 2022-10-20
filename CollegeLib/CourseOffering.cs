@@ -1,6 +1,6 @@
 ﻿namespace CollegeLib;
 
-public class CourseOffering
+public class CourseOffering : IComparable<CourseOffering>
 {
     public int Year { get; set; }
     public string Semester { get; set; }
@@ -14,5 +14,10 @@ public class CourseOffering
         Semester = semester;
         Course = course;
         Teacher = teacher;
+    }
+
+    public int CompareTo(CourseOffering? other)
+    {
+        throw new NotImplementedException();
     }
 }
