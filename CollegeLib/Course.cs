@@ -15,7 +15,7 @@ public class Course : IComparable<Course>
     {
         if (ReferenceEquals(this, other)) return 0;
         if (ReferenceEquals(null, other)) return 1;
-        return Code.CompareTo(other.Code);
+        return String.Compare(Code, other.Code, StringComparison.Ordinal);
     }
 
     public override string ToString()
