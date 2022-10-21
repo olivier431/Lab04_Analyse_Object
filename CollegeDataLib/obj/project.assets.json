@@ -27,23 +27,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\oli_4\\.nuget\\packages\\": {},
+    "C:\\Users\\Olivier Lefebvre\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oli_4\\Desktop\\Cegep\\Automne 2022\\Analyse_objet\\Lab04\\Lab04_Analyse_Object\\CollegeDataLib\\CollegeDataLib.csproj",
+      "projectUniqueName": "C:\\Users\\Olivier Lefebvre\\Desktop\\CEGEP\\Automne 2022\\Analyse Objet\\Lab04\\CollegeDataLib\\CollegeDataLib.csproj",
       "projectName": "CollegeDataLib",
-      "projectPath": "C:\\Users\\oli_4\\Desktop\\Cegep\\Automne 2022\\Analyse_objet\\Lab04\\Lab04_Analyse_Object\\CollegeDataLib\\CollegeDataLib.csproj",
-      "packagesPath": "C:\\Users\\oli_4\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oli_4\\Desktop\\Cegep\\Automne 2022\\Analyse_objet\\Lab04\\Lab04_Analyse_Object\\CollegeDataLib\\obj\\",
+      "projectPath": "C:\\Users\\Olivier Lefebvre\\Desktop\\CEGEP\\Automne 2022\\Analyse Objet\\Lab04\\CollegeDataLib\\CollegeDataLib.csproj",
+      "packagesPath": "C:\\Users\\Olivier Lefebvre\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Olivier Lefebvre\\Desktop\\CEGEP\\Automne 2022\\Analyse Objet\\Lab04\\CollegeDataLib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\oli_4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Olivier Lefebvre\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -58,8 +58,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\oli_4\\Desktop\\Cegep\\Automne 2022\\Analyse_objet\\Lab04\\Lab04_Analyse_Object\\CollegeLib\\CollegeLib.csproj": {
-              "projectPath": "C:\\Users\\oli_4\\Desktop\\Cegep\\Automne 2022\\Analyse_objet\\Lab04\\Lab04_Analyse_Object\\CollegeLib\\CollegeLib.csproj"
+            "C:\\Users\\Olivier Lefebvre\\Desktop\\CEGEP\\Automne 2022\\Analyse Objet\\Lab04\\CollegeLib\\CollegeLib.csproj": {
+              "projectPath": "C:\\Users\\Olivier Lefebvre\\Desktop\\CEGEP\\Automne 2022\\Analyse Objet\\Lab04\\CollegeLib\\CollegeLib.csproj"
             }
           }
         }
@@ -89,7 +89,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
