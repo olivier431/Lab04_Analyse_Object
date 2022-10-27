@@ -18,6 +18,18 @@ public class CourseOffering : IComparable<CourseOffering>
 
     public int CompareTo(CourseOffering? other)
     {
-        throw new NotImplementedException();
+        if (ReferenceEquals(this, other)) return 0;
+        if (ReferenceEquals(null, other)) return 1;
+        if (Year.CompareTo(other.Year) != 0)
+        {
+            return Year.CompareTo(other.Year);
+        }
+        
+        if (String.Compare(Semester, other.Semester, StringComparison.Ordinal) != 0)
+        {
+            return String.Compare(Semester, other.Semester, StringComparison.Ordinal);
+        }
+
+        return string.Compare(Course.Code, other.Course.Code, StringComparison.Ordinal);
     }
 }
