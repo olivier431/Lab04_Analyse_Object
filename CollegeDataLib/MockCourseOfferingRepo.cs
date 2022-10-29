@@ -74,6 +74,6 @@ public class MockCourseOfferingRepo : IDataRepo<CourseOffering, int>
     public bool Delete(int key)
     {
         _courseOfferings.RemoveAt(key);
-        return false;
+        return true;
     }
 }
