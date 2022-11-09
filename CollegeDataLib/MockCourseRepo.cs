@@ -13,8 +13,8 @@ public class MockCourseRepo : IDataRepo<Course, int>
         {
             new("420-0Q5-SW", "Reseau"),
             new("420-0SW-SW","Programmation jeux"),
-            new("420-1SY-SW","Analyse Objet"),
-            new("420-3SU-SW","Web : Serveur 2")
+            new("420-3SU-SW","Web : Serveur 2"),
+            new("420-1SY-SW","Analyse Objet")
         };
     }
 
