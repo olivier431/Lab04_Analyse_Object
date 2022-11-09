@@ -59,13 +59,60 @@ public class PersonSortingTests
     [Fact]
     public void SortByNameDescTest2()
     {
-        // var mock = new MockPersonRepo();
         var data = _mock.Select();
         Sorting.SortPersonByName(data, SortOrder.Desc);
 
         for (int i = 1; i < data.Count; i++)
         {
             Assert.Equal(1, String.Compare(data[i - 1].Name, data[i].Name, StringComparison.Ordinal));
+        }
+    }
+    
+    [Fact]
+    public void SortByDefaultASCTest()
+    {
+        var data = _mock.Select();
+        Sorting.SortPersonByDefault(data, SortOrder.Asc);
+        
+        Assert.Equal("Alice", data[2].Name);
+        Assert.Equal("Bob", data[3].Name);
+        Assert.Equal("Catherine", data[0].Name);
+        Assert.Equal("Denis", data[1].Name);
+    }
+    
+    [Fact]
+    public void SortByDefaultAscTest2()
+    {
+        var data = _mock.Select();
+        Sorting.SortPersonByDefault(data, SortOrder.Asc);
+
+        for (int i = 1; i < data.Count; i++)
+        {
+            Assert.Equal(-1, data[i-1].CompareTo(data[i]));
+        }
+    }
+    
+    [Fact]
+    public void SortByDefaultDESCTest()
+    {
+        var data = _mock.Select();
+        Sorting.SortPersonByDefault(data, SortOrder.Desc);
+        
+        Assert.Equal("Alice", data[1].Name);
+        Assert.Equal("Bob", data[0].Name);
+        Assert.Equal("Catherine", data[3].Name);
+        Assert.Equal("Denis", data[2].Name);
+    }
+    
+    [Fact]
+    public void SortByDefaultDescTest2()
+    {
+        var data = _mock.Select();
+        Sorting.SortPersonByDefault(data, SortOrder.Desc);
+
+        for (int i = 1; i < data.Count; i++)
+        {
+            Assert.Equal(1, data[i-1].CompareTo(data[i]));
         }
     }
 }
