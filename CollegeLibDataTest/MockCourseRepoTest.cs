@@ -1,4 +1,5 @@
 ﻿using CollegeDataLib;
+using CollegeLib;
 
 namespace CollegeLibDataTest;
 
@@ -39,11 +40,11 @@ public class MockCourseRepoTest
     [Fact]
     public void UpdateTest()
     {
-        //var actual = _mock.Select(0);
-        //Assert.Equal("420-0Q5-SW", actual.Code);
-        //Assert.True(_mock.Update(new("421-0Q5-SW", "Reseaux")));
-        //var course = _mock.Select(0);
-        //Assert.Equal("421-0Q5-SW", course.Code);
+        var actual = _mock.Select(0);
+        Assert.Equal("Reseau", actual.Name);
+        Assert.True(_mock.Update(new Course("420-0Q5-SW", "Reseaux" )));
+        var course = _mock.Select(0);
+        Assert.Equal("Reseaux", course.Name);
     }
 
     [Fact]

@@ -32,4 +32,15 @@ public class CourseOffering : IComparable<CourseOffering>
 
         return string.Compare(Course.Code, other.Course.Code, StringComparison.Ordinal);
     }
+
+    public override bool Equals(object? obj)
+    {
+        if (obj == null || GetType() != obj.GetType())
+        {
+            return false;
+        }
+
+        var other = (CourseOffering)obj;
+        return Year == other.Year;
+    }
 }

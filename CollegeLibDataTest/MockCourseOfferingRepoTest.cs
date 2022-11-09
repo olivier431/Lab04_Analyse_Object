@@ -42,11 +42,23 @@ public class MockCourseOfferingRepoTest
     [Fact]
     public void UpdateTest()
     {
-        //var actual = _mock.Select(0);
-        //Assert.Equal("420-0Q5-SW", actual.Code);
-        //Assert.True(_mock.Update(new("421-0Q5-SW", "Reseaux")));
-        //var course = _mock.Select(0);
-        //Assert.Equal("421-0Q5-SW", course.Code);
+        Course c1 = new("420-0Q5-SW", "Reseau");
+        Course c2 = new("420-0SW-SW", "Programmation jeux");
+        
+        Teacher t1 = new (18,"Ti-paul", DateOnly.FromDateTime(new DateTime(2022, 10, 27)), 1, "info", true, "teacher");
+        Teacher t2 = new ("Ti-paulo", DateOnly.FromDateTime(new DateTime(2022, 10, 27)), 2, "info", true, "teacher");
+        var actual = _mock.Select(0);
+        Assert.Equal(c1, actual.Course);
+        Assert.Equal(t1, actual.Teacher);
+        Assert.Equal("A2022", actual.Semester);
+        Assert.Equal(2022, actual.Year);
+        
+        Assert.True(_mock.Update(new(2022, "H2023", c2, t2)));
+        var course = _mock.Select(0);
+        Assert.Equal(c2, course.Course);
+        Assert.Equal(t2, course.Teacher);
+        Assert.Equal("H2023", course.Semester);
+        Assert.Equal(2022, course.Year);
     }
     
     [Fact]

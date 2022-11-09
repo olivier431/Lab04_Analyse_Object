@@ -22,4 +22,15 @@ public class Course : IComparable<Course>
     {
         return $"{Code}: {Name}";
     }
+
+    public override bool Equals(object? obj)
+    {
+        if (obj == null || GetType() != obj.GetType())
+        {
+            return false;
+        }
+
+        var other = (Course)obj;
+        return Code.Equals(other.Code);
+    }
 }

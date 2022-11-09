@@ -22,9 +22,9 @@ public class MockCourseOfferingRepo : IDataRepo<CourseOffering, int>
         _courseOfferings = new List<CourseOffering>()
         {
             new(2022, "A2022", c1, t1),
-            new(2022, "A2022", c2, t2),
-            new(2022, "A2022", c3, t3),
-            new(2022, "A2022", c4, t4)
+            new(2021, "A2021", c2, t2),
+            new(2020, "A2020", c3, t3),
+            new(2019, "A2019", c4, t4)
             
         };
     }
