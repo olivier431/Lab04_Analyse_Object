@@ -14,10 +14,10 @@ public class MockCourseOfferingRepo : IDataRepo<CourseOffering, int>
         Course c3 = new("420-1SY-SW","Analyse Objet");
         Course c4 = new("420-3SU-SW","Web : Serveur 2");
         
-        Teacher t1 = new ("Ti-paul", DateOnly.FromDateTime(new DateTime(2022, 10, 27)), 1, "info", true, "teacher");
-        Teacher t2 = new ("Ti-paulo", DateOnly.FromDateTime(new DateTime(2022, 10, 27)), 2, "info", true, "teacher");
-        Teacher t3 = new ("Ti-paule", DateOnly.FromDateTime(new DateTime(2022, 10, 27)), 3, "info", true, "teacher");
-        Teacher t4 = new ("Ti-paula", DateOnly.FromDateTime(new DateTime(2022, 10, 27)), 4, "info", true, "teacher");
+        Teacher t1 = new (1,"Ti-paul", DateOnly.FromDateTime(new DateTime(2022, 10, 27)), 1, "info", true, "teacher");
+        Teacher t2 = new (2,"Ti-paulo", DateOnly.FromDateTime(new DateTime(2022, 10, 27)), 2, "info", true, "teacher");
+        Teacher t3 = new (3,"Ti-paule", DateOnly.FromDateTime(new DateTime(2022, 10, 27)), 3, "info", true, "teacher");
+        Teacher t4 = new (4,"Ti-paula", DateOnly.FromDateTime(new DateTime(2022, 10, 27)), 4, "info", true, "teacher");
         
         _courseOfferings = new List<CourseOffering>()
         {

@@ -45,8 +45,8 @@ public class MockCourseOfferingRepoTest
         Course c1 = new("420-0Q5-SW", "Reseau");
         Course c2 = new("420-0SW-SW", "Programmation jeux");
         
-        Teacher t1 = new (18,"Ti-paul", DateOnly.FromDateTime(new DateTime(2022, 10, 27)), 1, "info", true, "teacher");
-        Teacher t2 = new ("Ti-paulo", DateOnly.FromDateTime(new DateTime(2022, 10, 27)), 2, "info", true, "teacher");
+        Teacher t1 = new (1,"Ti-paul", DateOnly.FromDateTime(new DateTime(2022, 10, 27)), 1, "info", true, "teacher");
+        Teacher t2 = new (2,"Ti-paulo", DateOnly.FromDateTime(new DateTime(2022, 10, 27)), 2, "info", true, "teacher");
         var actual = _mock.Select(0);
         Assert.Equal(c1, actual.Course);
         Assert.Equal(t1, actual.Teacher);
