@@ -115,4 +115,56 @@ public class PersonSortingTests
             Assert.Equal(1, data[i-1].CompareTo(data[i]));
         }
     }
+    
+    [Fact]
+    public void SortByDOBASCTest()
+    {
+        var data = _mock.Select();
+        Sorting.SortPersonByDOB(data, SortOrder.Asc);
+        
+        Assert.Equal("Alice", data[3].Name);
+        Assert.Equal("Bob", data[0].Name);
+        Assert.Equal("Catherine", data[2].Name);
+        Assert.Equal("Denis", data[1].Name);
+        
+    }
+    
+    [Fact]
+    public void SortByDOBASCTest2()
+    {
+        var data = _mock.Select();
+        Sorting.SortPersonByDOB(data, SortOrder.Asc);
+        
+        for (int i = 1; i < data.Count; i++)
+        {
+            Assert.Equal(-1, data[i-1].Dob.CompareTo(data[i].Dob));
+        }
+        
+    }
+    
+    [Fact]
+    public void SortByDOBDESCTest()
+    {
+        var data = _mock.Select();
+        Sorting.SortPersonByDOB(data, SortOrder.Desc);
+        
+        Assert.Equal("Alice", data[0].Name);
+        Assert.Equal("Bob", data[3].Name);
+        Assert.Equal("Catherine", data[1].Name);
+        Assert.Equal("Denis", data[2].Name);
+        
+    }
+    
+    [Fact]
+    public void SortByDOBDESCTest2()
+    {
+        var data = _mock.Select();
+        Sorting.SortPersonByDOB(data, SortOrder.Desc);
+        
+        for (int i = 1; i < data.Count; i++)
+        {
+            Assert.Equal(1, data[i-1].Dob.CompareTo(data[i].Dob));
+        }
+        
+    }
 }
